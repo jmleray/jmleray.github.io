@@ -98,25 +98,25 @@
     /* --------- Mapping des mots-clés vers des liens --------- */
     const KW_LINKS = {
       // AI / IA
-      "ai": "https://en.wikipedia.org/wiki/Artificial_intelligence",
-      "artificial intelligence": "https://en.wikipedia.org/wiki/Artificial_intelligence",
-      "ia": "https://fr.wikipedia.org/wiki/Intelligence_artificielle",
-      "intelligence artificielle": "https://fr.wikipedia.org/wiki/Intelligence_artificielle",
+      "ai": "https://arxiv.org/abs/2510.19877",
+      "artificial intelligence": "https://arxiv.org/pdf/2510.19877",
+      "ia": "https://adscriptum.blogspot.com/p/ia.html",
+      "intelligence artificielle": "https://formationsenia.blogspot.com/",
 
       // Generative AI
-      "generative ai": "https://en.wikipedia.org/wiki/Generative_artificial_intelligence",
+      "generative ai": "https://arxiv.org/abs/2509.02506",
       "ia générative": "https://fr.wikipedia.org/wiki/Intelligence_artificielle_g%C3%A9n%C3%A9rative",
 
       // LLM
-      "llm": "https://en.wikipedia.org/wiki/Large_language_model",
-      "modèle de langue de grande taille": "https://fr.wikipedia.org/wiki/Mod%C3%A8le_de_langage_de_grande_taille",
+      "llm": "https://adscriptum.blogspot.com/2025/07/ia-le-reve-impense-de-diderot-et.html",
+      "grand modèle de langage": "https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage",
 
       // Machine Translation
-      "machine translation": "https://en.wikipedia.org/wiki/Machine_translation",
-      "traduction automatique": "https://fr.wikipedia.org/wiki/Traduction_automatique",
+      "machine translation": "https://pucci-in-english.blogspot.com/2025/07/the-history-of-machine-translation-in.html",
+      "traduction automatique": "https://zenodo.org/records/17360312",
 
       // Federico Pucci
-      "federico pucci": "http://federicopucci.it"
+      "federico pucci": "https://adscriptum.blogspot.com/p/federico-pucci.html"
     };
     const fallbackLink = term => `https://www.google.com/search?q=${encodeURIComponent(term)}`;
     const linkForKeyword = k => KW_LINKS[k.toLowerCase().trim()] || fallbackLink(k);
