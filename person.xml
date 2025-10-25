@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<person:person xmlns:address="http://www.orcid.org/ns/address" xmlns:email="http://www.orcid.org/ns/email" xmlns:history="http://www.orcid.org/ns/history" xmlns:employment="http://www.orcid.org/ns/employment" xmlns:education="http://www.orcid.org/ns/education" xmlns:other-name="http://www.orcid.org/ns/other-name" xmlns:deprecated="http://www.orcid.org/ns/deprecated" xmlns:funding="http://www.orcid.org/ns/funding" xmlns:research-resource="http://www.orcid.org/ns/research-resource" xmlns:service="http://www.orcid.org/ns/service" xmlns:researcher-url="http://www.orcid.org/ns/researcher-url" xmlns:distinction="http://www.orcid.org/ns/distinction" xmlns:internal="http://www.orcid.org/ns/internal" xmlns:membership="http://www.orcid.org/ns/membership" xmlns:person="http://www.orcid.org/ns/person" xmlns:personal-details="http://www.orcid.org/ns/personal-details" xmlns:bulk="http://www.orcid.org/ns/bulk" xmlns:common="http://www.orcid.org/ns/common" xmlns:record="http://www.orcid.org/ns/record" xmlns:keyword="http://www.orcid.org/ns/keyword" xmlns:activities="http://www.orcid.org/ns/activities" xmlns:qualification="http://www.orcid.org/ns/qualification" xmlns:external-identifier="http://www.orcid.org/ns/external-identifier" xmlns:error="http://www.orcid.org/ns/error" xmlns:preferences="http://www.orcid.org/ns/preferences" xmlns:invited-position="http://www.orcid.org/ns/invited-position" xmlns:work="http://www.orcid.org/ns/work" xmlns:peer-review="http://www.orcid.org/ns/peer-review">
+    <person:name visibility="public" path="0009-0006-7642-7408">
+        <common:created-date>2025-09-09T21:00:58.174Z</common:created-date>
+        <common:last-modified-date>2025-09-09T21:00:58.174Z</common:last-modified-date>
+        <personal-details:given-names>Jean-Marie</personal-details:given-names>
+        <personal-details:family-name>Le Ray</personal-details:family-name>
+    </person:name>
+    <other-name:other-names/>
+    <person:biography visibility="public">
+        <common:created-date>2025-09-09T21:20:31.815Z</common:created-date>
+        <common:last-modified-date>2025-09-09T21:42:51.448Z</common:last-modified-date>
+        <personal-details:content>French translator (EN/IT–FR) and interpreter (IT–FR) based in Rome, with over 40 years of professional experience. In parallel with my translation practice, I pursue independent research focusing on machine translation and artificial intelligence.
+Through my studies I have brought to light the invention of Federico Pucci, an early and overlooked pioneer whose theoretical contributions anticipated both rule-based machine translation and interlingua systems. My publications include hundreds of blog posts and scholarly articles in English, French, and Italian, examining the intersections of language, technology, and history. 
+One of my recent works, The Forgotten Code: Validating a Century-Old Translation System with AI (arXiv:2509.02506), reflects my ongoing interest in revisiting historical approaches to translation through the lens of modern AI.</personal-details:content>
+    </person:biography>
+    <researcher-url:researcher-urls>
+        <researcher-url:researcher-url put-code="5680256" visibility="public" display-index="7">
+            <common:created-date>2025-09-09T21:03:49.524Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:09:45.816Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <researcher-url:url-name>Translation 2.0</researcher-url:url-name>
+            <researcher-url:url>http://www.translation2.com/</researcher-url:url>
+        </researcher-url:researcher-url>
+        <researcher-url:researcher-url put-code="5680258" visibility="public" display-index="6">
+            <common:created-date>2025-09-09T21:05:35.742Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:09:45.816Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <researcher-url:url-name>LinkedIn</researcher-url:url-name>
+            <researcher-url:url>https://www.linkedin.com/in/jmleray/</researcher-url:url>
+        </researcher-url:researcher-url>
+        <researcher-url:researcher-url put-code="5680259" visibility="public" display-index="5">
+            <common:created-date>2025-09-09T21:05:57.045Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:09:45.816Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <researcher-url:url-name>X</researcher-url:url-name>
+            <researcher-url:url>https://x.com/jmleray</researcher-url:url>
+        </researcher-url:researcher-url>
+        <researcher-url:researcher-url put-code="5680261" visibility="public" display-index="4">
+            <common:created-date>2025-09-09T21:06:41.114Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:32:31.429Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <researcher-url:url-name>French Blog: Adscriptor</researcher-url:url-name>
+            <researcher-url:url>http://www.adscriptor.com/</researcher-url:url>
+        </researcher-url:researcher-url>
+        <researcher-url:researcher-url put-code="5680262" visibility="public" display-index="3">
+            <common:created-date>2025-09-09T21:07:30.590Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:09:45.816Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <researcher-url:url-name>Federico Pucci</researcher-url:url-name>
+            <researcher-url:url>https://adscriptum.blogspot.com/p/federico-pucci.html</researcher-url:url>
+        </researcher-url:researcher-url>
+        <researcher-url:researcher-url put-code="5680264" visibility="public" display-index="2">
+            <common:created-date>2025-09-09T21:08:13.846Z</common:created-date>
+            <common:last-modified-date>2025-10-25T00:21:58.250Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <researcher-url:url-name>arXiv</researcher-url:url-name>
+            <researcher-url:url>https://arxiv.org/a/leray_j_1.html</researcher-url:url>
+        </researcher-url:researcher-url>
+        <researcher-url:researcher-url put-code="5680265" visibility="public" display-index="1">
+            <common:created-date>2025-09-09T21:09:45.797Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:09:45.797Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <researcher-url:url-name>SlideShare</researcher-url:url-name>
+            <researcher-url:url>https://fr.slideshare.net/jmleray</researcher-url:url>
+        </researcher-url:researcher-url>
+    </researcher-url:researcher-urls>
+    <email:emails>
+        <email:email visibility="private" verified="true" primary="true">
+            <common:created-date>2025-09-09T21:00:58.166Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:30:06.786Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <email:email>jmleray@translation2.com</email:email>
+        </email:email>
+        <email:email visibility="private" verified="true" primary="false">
+            <common:created-date>2025-09-09T21:00:58.169Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:01:31.675Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <email:email>jmleray@gmail.com</email:email>
+        </email:email>
+    </email:emails>
+    <address:addresses>
+        <address:address put-code="3882373" visibility="public" display-index="4">
+            <common:created-date>2025-09-09T21:12:45.686Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:12:45.686Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <address:country>US</address:country>
+        </address:address>
+        <address:address put-code="3882372" visibility="public" display-index="3">
+            <common:created-date>2025-09-09T21:12:45.674Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:12:45.674Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <address:country>GB</address:country>
+        </address:address>
+        <address:address put-code="3882371" visibility="public" display-index="2">
+            <common:created-date>2025-09-09T21:12:45.663Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:12:45.663Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <address:country>FR</address:country>
+        </address:address>
+        <address:address put-code="3882370" visibility="public" display-index="1">
+            <common:created-date>2025-09-09T21:12:45.651Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:12:45.651Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <address:country>IT</address:country>
+        </address:address>
+    </address:addresses>
+    <keyword:keywords>
+        <keyword:keyword put-code="4816669" visibility="public" display-index="9">
+            <common:created-date>2025-09-09T21:10:51.268Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:11:40.266Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <keyword:content>Intelligence artificielle</keyword:content>
+        </keyword:keyword>
+        <keyword:keyword put-code="4816668" visibility="public" display-index="8">
+            <common:created-date>2025-09-09T21:10:51.264Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:11:40.266Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <keyword:content>Traduction automatique</keyword:content>
+        </keyword:keyword>
+        <keyword:keyword put-code="4816667" visibility="public" display-index="7">
+            <common:created-date>2025-09-09T21:10:51.262Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:11:40.266Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <keyword:content>Federico Pucci</keyword:content>
+        </keyword:keyword>
+        <keyword:keyword put-code="4816666" visibility="public" display-index="6">
+            <common:created-date>2025-09-09T21:10:51.259Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:11:40.266Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <keyword:content>IA</keyword:content>
+        </keyword:keyword>
+        <keyword:keyword put-code="4816665" visibility="public" display-index="5">
+            <common:created-date>2025-09-09T21:10:51.256Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:11:40.266Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <keyword:content>AI</keyword:content>
+        </keyword:keyword>
+        <keyword:keyword put-code="4816664" visibility="public" display-index="4">
+            <common:created-date>2025-09-09T21:10:51.252Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:11:40.266Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <keyword:content>Artificial Intelligence</keyword:content>
+        </keyword:keyword>
+        <keyword:keyword put-code="4816672" visibility="public" display-index="3">
+            <common:created-date>2025-09-09T21:11:15.645Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:11:40.266Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <keyword:content>Machine Translation</keyword:content>
+        </keyword:keyword>
+        <keyword:keyword put-code="4816671" visibility="public" display-index="2">
+            <common:created-date>2025-09-09T21:11:15.642Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:11:40.266Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <keyword:content>Generative AI</keyword:content>
+        </keyword:keyword>
+        <keyword:keyword put-code="4816673" visibility="public" display-index="1">
+            <common:created-date>2025-09-09T21:11:40.239Z</common:created-date>
+            <common:last-modified-date>2025-09-09T21:11:40.239Z</common:last-modified-date>
+            <common:source>
+                <common:source-orcid>
+                    <common:uri>https://orcid.org/0009-0006-7642-7408</common:uri>
+                    <common:path>0009-0006-7642-7408</common:path>
+                    <common:host>orcid.org</common:host>
+                </common:source-orcid>
+                <common:source-name>Jean-Marie Le Ray</common:source-name>
+            </common:source>
+            <keyword:content>LLM</keyword:content>
+        </keyword:keyword>
+    </keyword:keywords>
+    <external-identifier:external-identifiers/>
+</person:person>
