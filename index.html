@@ -6,7 +6,7 @@
   <title>Jean-Marie Le Ray — ORCID</title>
 
   <!-- Meta SEO (≈155 caractères) -->
-  <meta name="description" content="CV ORCID de Jean-Marie Le Ray : bio, mots-clés, expériences, études et publications — généré automatiquement depuis data/person.xml. CC BY 4.0." />
+  <meta name="description" content="CV ORCID de Jean-Marie Le Ray : bio, mots-clés cliquables, expériences, études et publications — généré automatiquement depuis data/person.xml. CC BY 4.0." />
   <meta name="robots" content="index,follow" />
   <meta name="format-detection" content="telephone=no" />
   <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
@@ -36,6 +36,7 @@
     li+li{margin-top:.35rem}
     .hidden{display:none}
     .badge{display:inline-block;padding:.25rem .55rem;border-radius:.6rem;background:#eef;border:1px solid #ccd;margin:.18rem .28rem 0 0;font-size:.85rem}
+    .badge:hover{background:#e6ecff}
     code.small{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:.85rem;background:#f2f3f5;padding:.15rem .35rem;border-radius:.35rem}
   </style>
 </head>
@@ -94,10 +95,33 @@
     const yearOf = d => { const y = firstLocal(d, 'year'); return y ? text(y) : ''; };
     const show = id => document.getElementById(id).classList.remove('hidden');
 
-    /* --------- Extraction propre des mots-clés ORCID ---------
-       Cas A: <keyword><content>Texte</content> ...</keyword>
-       Cas B: <keyword>Texte</keyword> + autres sous-balises (dates, source)
-       => On garde uniquement le libellé, sans dates/ID. */
+    /* --------- Mapping des mots-clés vers des liens --------- */
+    const KW_LINKS = {
+      // AI / IA
+      "ai": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+      "artificial intelligence": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+      "ia": "https://fr.wikipedia.org/wiki/Intelligence_artificielle",
+      "intelligence artificielle": "https://fr.wikipedia.org/wiki/Intelligence_artificielle",
+
+      // Generative AI
+      "generative ai": "https://en.wikipedia.org/wiki/Generative_artificial_intelligence",
+      "ia générative": "https://fr.wikipedia.org/wiki/Intelligence_artificielle_g%C3%A9n%C3%A9rative",
+
+      // LLM
+      "llm": "https://en.wikipedia.org/wiki/Large_language_model",
+      "modèle de langue de grande taille": "https://fr.wikipedia.org/wiki/Mod%C3%A8le_de_langage_de_grande_taille",
+
+      // Machine Translation
+      "machine translation": "https://en.wikipedia.org/wiki/Machine_translation",
+      "traduction automatique": "https://fr.wikipedia.org/wiki/Traduction_automatique",
+
+      // Federico Pucci
+      "federico pucci": "http://federicopucci.it"
+    };
+    const fallbackLink = term => `https://www.google.com/search?q=${encodeURIComponent(term)}`;
+    const linkForKeyword = k => KW_LINKS[k.toLowerCase().trim()] || fallbackLink(k);
+
+    /* --------- Extraction propre des mots-clés ORCID --------- */
     const keywordLabel = (kEl) => {
       const c = firstLocal(kEl, 'content');
       if (c) return text(c);
@@ -111,10 +135,7 @@
     const uniqueSorted = arr => Array.from(new Set(arr.filter(Boolean).map(s => s.trim())))
       .sort((a,b) => a.localeCompare(b,'fr',{sensitivity:'base'}));
 
-    /* --------- Bio propre (commencer par “French…”, sans dates) ---------
-       ORCID met souvent <biography><content>…</content> + (created/modified).
-       On lit <content>, sinon on ne prend que les TEXT NODES directs.
-       On retire un éventuel préfixe de timestamps ISO. */
+    /* --------- Bio propre (commencer par “French…”, sans dates/IDs) --------- */
     const cleanBio = bioEl => {
       if (!bioEl) return '';
       const c = firstLocal(bioEl, 'content');
@@ -144,9 +165,9 @@
         const display = credit || [given,family].filter(Boolean).join(' ') || 'Nom ORCID';
         document.getElementById('name').textContent = display;
 
-        // ORCID iD (si présent dans <orcid-identifier><path>)
+        // ORCID iD (si présent)
         const idPath = firstLocal(firstLocal(doc,'orcid-identifier')||doc,'path');
-        const orcidId = idPath ? text(idPath) : '';
+        const orcidId = idPath ? text(idPath) : '0009-0006-7642-7408';
         document.getElementById('strap').innerHTML = orcidId
           ? `Profil ORCID : <a href="https://orcid.org/${orcidId}" rel="me">https://orcid.org/${orcidId}</a>`
           : 'Profil ORCID';
@@ -158,13 +179,13 @@
           show('bioBox');
         }
 
-        // Mots-clés
+        // Mots-clés (cliquables)
         const kwRoot = firstLocal(person,'keywords');
         if (kwRoot){
           const kws = uniqueSorted(byLocal(kwRoot,'keyword').map(keywordLabel));
           if (kws.length){
             document.getElementById('keywords').innerHTML =
-              kws.map(k => `<span class="badge">${k}</span>`).join(' ');
+              kws.map(k => `<a class="badge" href="${linkForKeyword(k)}" target="_blank" rel="noopener noreferrer">${k}</a>`).join(' ');
             show('keywordsBox');
           }
         }
