@@ -2,228 +2,198 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jean-Marie Le Ray — ORCID</title>
 
-  <title>Jean-Marie Le Ray — CV (ORCID)</title>
-
-  <!-- Meta description ~155c pour SEO/LLM -->
-  <meta name="description" content="CV de Jean-Marie Le Ray, profil ORCID : biographie, expériences, éducation et travaux. Données synchronisées depuis person.xml (ORCID).">
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:type" content="profile">
-  <meta property="og:title" content="Jean-Marie Le Ray — CV (ORCID)">
-  <meta property="og:description" content="Biographie, expériences, éducation et travaux, générés depuis ORCID.">
-  <meta property="og:url" content="https://jmleray.github.io/">
-  <meta name="twitter:card" content="summary">
-
-  <!-- JSON-LD Person minimal (sera complété dynamiquement) -->
-  <script type="application/ld+json" id="ld-person">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Jean-Marie Le Ray",
-    "url": "https://jmleray.github.io/",
-    "identifier": "ORCID:",
-    "sameAs": ["https://orcid.org/"]
-  }
-  </script>
-
-  <!-- Licence (comme sur ton blog) -->
-  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+  <!-- Meta SEO courte (150–160c) -->
+  <meta name="description" content="CV ORCID de Jean-Marie Le Ray : bio, mots-clés, emplois, études et publications, générés automatiquement depuis person.xml. Licence CC BY 4.0." />
+  <meta name="robots" content="index,follow" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
 
   <style>
-    :root { --ink:#111; --muted:#6b7280; --accent:#0f766e; }
-    *{box-sizing:border-box}
-    body{margin:0;font:16px/1.55 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;}
-    header{padding:32px 20px 8px;max-width:960px;margin:0 auto}
-    header h1{margin:0 0 4px;font-size:28px;line-height:1.2}
-    header .tag{color:var(--muted)}
-    main{max-width:960px;margin:0 auto;padding:8px 20px 40px}
-    section{margin:28px 0}
-    h2{font-size:20px;margin:0 0 12px;line-height:1.3;border-bottom:1px solid #eee;padding-bottom:6px}
-    .item{padding:10px 0;border-bottom:1px dashed #eee}
-    .item:last-child{border-bottom:none}
-    .title{font-weight:600}
-    .sub{color:var(--muted)}
-    .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
-    .chip{border:1px solid #e5e7eb;border-radius:999px;padding:2px 10px;font-size:12px;color:#374151}
+    :root { --fg:#111; --muted:#666; --link:#0a58ca; --bg:#fff; --card:#f6f7f9; }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif}
+    a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:860px;margin:40px auto;padding:0 20px}
+    header{margin-bottom:24px}
+    h1{font-size:clamp(1.6rem,3vw,2.2rem);margin:0 0 6px 0}
     .muted{color:var(--muted)}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .small{font-size:13px}
-    footer{max-width:960px;margin:0 auto;padding:20px;color:var(--muted);border-top:1px solid #eee}
-    .skeleton{background:linear-gradient(90deg,#f3f4f6, #e5e7eb, #f3f4f6);background-size:200% 100%;animation:shimmer 1.2s linear infinite}
-    @keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
-    .loading{height:14px;border-radius:4px;margin:6px 0}
+    .badge{display:inline-block;padding:.2rem .5rem;border-radius:.5rem;background:#eef;border:1px solid #ccd;margin:.15rem .25rem 0 0;font-size:.85rem}
+    section{background:var(--card);border:1px solid #e6e8eb;border-radius:12px;padding:16px 18px;margin:18px 0}
+    h2{font-size:1.15rem;margin:.1rem 0 .6rem}
+    ul{margin:.4rem 0 0 1.1rem}
+    li+li{margin-top:.35rem}
+    .grid{display:grid;gap:10px}
+    .two{grid-template-columns:1fr 1fr}
+    footer{margin:28px 0 18px}
+    code.small{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,"Liberation Mono",Consolas,monospace;font-size:.85rem;background:#f2f3f5;padding:.15rem .35rem;border-radius:.35rem}
     .hidden{display:none}
   </style>
 </head>
 <body>
-  <header>
-    <h1 id="name" class="skeleton loading" style="width:320px"></h1>
-    <div id="orcid" class="tag small skeleton loading" style="width:180px"></div>
-  </header>
+  <div class="container">
+    <header>
+      <h1 id="name">Jean-Marie Le Ray</h1>
+      <div class="muted" id="strap">ORCID non chargé</div>
+      <div class="muted" style="margin-top:6px">
+        Données : <code class="small">data/person.xml</code> (ORCID) — Licence : <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> — Site : <a href="https://jmleray.github.io">jmleray.github.io</a>
+      </div>
+    </header>
 
-  <main>
-    <section id="bio-sec" class="hidden">
-      <h2>Biographie</h2>
-      <p id="bio"></p>
+    <section id="bioBox" class="hidden">
+      <h2>Bio</h2>
+      <div id="bio"></div>
     </section>
 
-    <section id="exp-sec" class="hidden">
-      <h2>Expériences</h2>
-      <div id="exp"></div>
+    <section id="keywordsBox" class="hidden">
+      <h2>Mots-clés</h2>
+      <div id="keywords"></div>
     </section>
 
-    <section id="edu-sec" class="hidden">
-      <h2>Éducation</h2>
-      <div id="edu"></div>
+    <section id="employmentBox" class="hidden">
+      <h2>Emplois</h2>
+      <ul id="employment"></ul>
     </section>
 
-    <section id="works-sec" class="hidden">
-      <h2>Travaux / Publications</h2>
-      <div id="works"></div>
+    <section id="educationBox" class="hidden">
+      <h2>Études</h2>
+      <ul id="education"></ul>
     </section>
-  </main>
 
-  <footer class="small">
-    Données : <code>person.xml</code> (ORCID). — Licence : <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. — Site : <a href="https://jmleray.github.io/">jmleray.github.io</a>.
-  </footer>
+    <section id="worksBox" class="hidden">
+      <h2>Publications / Travaux</h2>
+      <ul id="works"></ul>
+    </section>
+
+    <footer class="muted">
+      Généré côté client à partir d’ORCID XML. Aucun suivi, aucun cookie.
+    </footer>
+  </div>
 
   <script>
-  // Utilitaires
-  const $ = sel => document.querySelector(sel);
-  const show = id => $(id).classList.remove('hidden');
-  const text = (node, val) => { node.textContent = val; node.classList.remove('skeleton','loading'); };
+    // -------- Helpers namespace-agnostic (ignore les prefixes ORCID) ----------
+    const byLocal = (node, local) => {
+      // Renvoie tous les descendants dont le localName (sans namespace) correspond
+      const out = [];
+      const walker = document.createTreeWalker(node, NodeFilter.SHOW_ELEMENT, {
+        acceptNode(el) { return (el.localName === local) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP; }
+      });
+      let n; while ((n = walker.nextNode())) out.push(n);
+      return out;
+    };
+    const firstLocal = (node, local) => byLocal(node, local)[0] || null;
+    const text = (el) => (el && el.textContent || '').trim();
+    const yearOf = (parent, tag) => {
+      const y = firstLocal(parent, 'year');
+      return y ? text(y) : '';
+    };
 
-  // Récupère le texte d’un nœud si présent (par nom local, ORCID XML varie selon namespace)
-  const firstText = (root, names) => {
-    for (const n of names) {
-      const el = root.getElementsByTagName(n)[0] || root.querySelector(n);
-      if (el && (el.textContent || el.getAttribute && el.getAttribute('path'))) {
-        return el.textContent || el.getAttribute('path');
+    // -------- Rendu simple ----------
+    const show = (id) => document.getElementById(id).classList.remove('hidden');
+    const set = (id, html) => { const n = document.getElementById(id); n.innerHTML = html; if (html.trim()) show(id + 'Box'); };
+
+    // -------- Parse ORCID XML ----------
+    async function loadORCID() {
+      try {
+        const res = await fetch('data/person.xml', { cache: 'no-store' });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const str = await res.text();
+
+        const doc = new DOMParser().parseFromString(str, 'application/xml');
+
+        // Nom
+        const person = firstLocal(doc, 'person') || doc;
+        const given = text(firstLocal(person, 'given-names')) || '';
+        const family = text(firstLocal(person, 'family-name')) || '';
+        const creditName = text(firstLocal(person, 'credit-name')) || '';
+        const displayName = creditName || [given, family].filter(Boolean).join(' ') || 'Nom ORCID';
+        document.getElementById('name').textContent = displayName;
+
+        // ORCID iD
+        const pathEl = firstLocal(doc, 'path');
+        const orcidId = pathEl ? ('https://orcid.org/' + text(pathEl)) : '';
+        document.getElementById('strap').innerHTML = orcidId
+          ? `Profil ORCID : <a href="${orcidId}" rel="me">${orcidId}</a>`
+          : 'Profil ORCID';
+
+        // Bio
+        const bio = text(firstLocal(person, 'biography'));
+        if (bio) set('bio', bio);
+
+        // Keywords
+        const kwRoot = firstLocal(person, 'keywords');
+        if (kwRoot) {
+          const kws = byLocal(kwRoot, 'keyword').map(k => text(k)).filter(Boolean);
+          if (kws.length) {
+            document.getElementById('keywords').innerHTML = kws.map(k => `<span class="badge">${k}</span>`).join(' ');
+            show('keywordsBox');
+          }
+        }
+
+        // Emplois (employment-summary)
+        const employments = byLocal(doc, 'employment-summary');
+        if (employments.length) {
+          const items = employments.map(e => {
+            const org = firstLocal(e, 'organization');
+            const orgName = org ? text(firstLocal(org, 'name')) : '';
+            const role = text(firstLocal(e, 'role-title'));
+            const start = firstLocal(e, 'start-date'), end = firstLocal(e, 'end-date');
+            const ys = start ? yearOf(start, 'year') : '';
+            const ye = end ? yearOf(end, 'year') : '';
+            const period = (ys || ye) ? ` (${ys || '…'}–${ye || '…'})` : '';
+            return (orgName || role) ? `<li><strong>${orgName || role}</strong>${role && orgName ? ' — ' + role : ''}${period}</li>` : '';
+          }).filter(Boolean).join('');
+          if (items) { document.getElementById('employment').innerHTML = items; show('employmentBox'); }
+        }
+
+        // Études (education-summary)
+        const educations = byLocal(doc, 'education-summary');
+        if (educations.length) {
+          const items = educations.map(e => {
+            const org = firstLocal(e, 'organization');
+            const orgName = org ? text(firstLocal(org, 'name')) : '';
+            const role = text(firstLocal(e, 'role-title')) || text(firstLocal(e, 'department-name')); // parfois degree/dep
+            const start = firstLocal(e, 'start-date'), end = firstLocal(e, 'end-date');
+            const ys = start ? yearOf(start, 'year') : '';
+            const ye = end ? yearOf(end, 'year') : '';
+            const period = (ys || ye) ? ` (${ys || '…'}–${ye || '…'})` : '';
+            return (orgName || role) ? `<li><strong>${orgName || role}</strong>${role && orgName ? ' — ' + role : ''}${period}</li>` : '';
+          }).filter(Boolean).join('');
+          if (items) { document.getElementById('education').innerHTML = items; show('educationBox'); }
+        }
+
+        // Travaux (work-summary)
+        const works = byLocal(doc, 'work-summary');
+        if (works.length) {
+          const items = works.map(w => {
+            const t = firstLocal(firstLocal(w, 'title') || w, 'title');
+            const title = text(t);
+            const pub = firstLocal(w, 'publication-date');
+            const y = pub ? yearOf(pub, 'year') : '';
+            const journal = text(firstLocal(w, 'journal-title'));
+            // Identifier externe (DOI/URL)
+            let link = '';
+            const extIds = byLocal(w, 'external-id');
+            for (const id of extIds) {
+              const type = text(firstLocal(id, 'external-id-type')).toLowerCase();
+              const val = text(firstLocal(id, 'external-id-value'));
+              if (type === 'doi' && val) { link = 'https://doi.org/' + val; break; }
+              if (type === 'url' && val) { link = val; }
+            }
+            const meta = [journal, y].filter(Boolean).join(' · ');
+            const titleHtml = link ? `<a href="${link}" target="_blank" rel="noopener">${title || '(sans titre)'}</a>` : (title || '(sans titre)');
+            return `<li>${titleHtml}${meta ? ` — <span class="muted">${meta}</span>` : ''}</li>`;
+          }).slice(0, 50).join(''); // limite prudente
+          if (items) { document.getElementById('works').innerHTML = items; show('worksBox'); }
+        }
+
+      } catch (err) {
+        document.getElementById('strap').textContent = 'Impossible de charger ORCID (' + err.message + ')';
       }
     }
-    return '';
-  };
 
-  // Lecture du fichier ORCID
-  fetch('person.xml', {cache:'no-store'})
-    .then(r => r.text())
-    .then(xmlStr => new window.DOMParser().parseFromString(xmlStr, 'application/xml'))
-    .then(doc => {
-      // Certains dumps ORCID sont <record:record> → la “personne” est sous <person:person> ou <person>
-      const person = doc.querySelector('person, person\\:person, record\\:person') || doc;
-
-      // Nom
-      const given = firstText(person, ['given-name','personal-details:given-name']);
-      const family = firstText(person, ['family-name','personal-details:family-name']);
-      const credit = firstText(person, ['credit-name','personal-details:credit-name']);
-      const fullName = (credit || [given, family].filter(Boolean).join(' ')).trim();
-      text($('#name'), fullName || 'Nom indisponible');
-
-      // ORCID iD (dans record:orcid-identifier > path)
-      let orcid = '';
-      const idNode = person.querySelector('orcid-identifier, common\\:orcid-identifier, record\\:orcid-identifier');
-      if (idNode) {
-        const path = firstText(idNode, ['path']);
-        if (path) orcid = `https://orcid.org/${path}`;
-      }
-      const orcidEl = $('#orcid');
-      orcidEl.innerHTML = orcid ? `<a href="${orcid}">${orcid}</a>` : 'ORCID indisponible';
-      orcidEl.classList.remove('skeleton','loading');
-
-      // Bio
-      const bio = firstText(person, ['biography','person:biography','record:biography']).trim();
-      if (bio) { $('#bio').textContent = bio; show('#bio-sec'); }
-
-      // Emplois (employment-summary)
-      const expWrap = $('#exp');
-      const employments = doc.querySelectorAll('employment-summary, activities\\:employment-summary');
-      if (employments.length) {
-        employments.forEach(e => {
-          const org = firstText(e, ['organization-name','common:organization-name']);
-          const role = firstText(e, ['role-title','common:role-title']);
-          const city = firstText(e, ['city']);
-          const region = firstText(e, ['region']);
-          const startY = firstText(e, ['start-date year','start-date > year']);
-          const endY = firstText(e, ['end-date year','end-date > year']);
-          const dates = (startY || endY) ? `${startY || '…'} – ${endY || 'présent'}` : '';
-          const line = `
-            <div class="item">
-              <div class="title">${role || 'Rôle'}</div>
-              <div class="sub">${[org, [city, region].filter(Boolean).join(', ')].filter(Boolean).join(' — ')}</div>
-              <div class="muted small">${dates}</div>
-            </div>`;
-          expWrap.insertAdjacentHTML('beforeend', line);
-        });
-        show('#exp-sec');
-      }
-
-      // Éducation (education-summary)
-      const eduWrap = $('#edu');
-      const edus = doc.querySelectorAll('education-summary, activities\\:education-summary');
-      if (edus.length) {
-        edus.forEach(e => {
-          const org = firstText(e, ['organization-name','common:organization-name']);
-          const degree = firstText(e, ['degree','education:degree','qualification']);
-          const startY = firstText(e, ['start-date year','start-date > year']);
-          const endY = firstText(e, ['end-date year','end-date > year']);
-          const dates = (startY || endY) ? `${startY || '…'} – ${endY || 'présent'}` : '';
-          const line = `
-            <div class="item">
-              <div class="title">${degree || 'Diplôme / Formation'}</div>
-              <div class="sub">${org || ''}</div>
-              <div class="muted small">${dates}</div>
-            </div>`;
-          eduWrap.insertAdjacentHTML('beforeend', line);
-        });
-        show('#edu-sec');
-      }
-
-      // Travaux (work-summary)
-      const worksWrap = $('#works');
-      const works = doc.querySelectorAll('work-summary, activities\\:work-summary');
-      if (works.length) {
-        works.forEach(w => {
-          const title = firstText(w, ['title','work:title','common:title']).trim();
-          const year = firstText(w, ['publication-date year','publication-date > year']);
-          // external-id:value pour DOI/arXiv/etc.
-          let doi = '';
-          w.querySelectorAll('external-id, common\\:external-id').forEach(x => {
-            const type = firstText(x, ['external-id-type']).toLowerCase();
-            const val = firstText(x, ['external-id-value']);
-            if (!doi && (type.includes('doi'))) doi = `https://doi.org/${val}`;
-          });
-          const journal = firstText(w, ['journal-title','work:journal-title']);
-          const line = `
-            <div class="item">
-              <div class="title">${title || 'Titre indisponible'}</div>
-              <div class="sub">${[journal, year].filter(Boolean).join(' • ')}</div>
-              ${doi ? `<div class="small"><a href="${doi}">DOI</a></div>` : ''}
-            </div>`;
-          worksWrap.insertAdjacentHTML('beforeend', line);
-        });
-        show('#works-sec');
-      }
-
-      // Met à jour dynamiquement le JSON-LD avec les infos ORCID récupérées
-      try {
-        const ld = JSON.parse(document.getElementById('ld-person').textContent);
-        if (fullName) ld.name = fullName;
-        if (orcid) {
-          ld.identifier = `ORCID:${orcid.replace('https://orcid.org/','')}`;
-          ld.sameAs = Array.from(new Set([...(ld.sameAs||[]), orcid]));
-        }
-        document.getElementById('ld-person').textContent = JSON.stringify(ld);
-      } catch(e){ /* silencieux */ }
-
-    })
-    .catch(err => {
-      text($('#name'), 'Jean-Marie Le Ray');
-      text($('#orcid'), 'ORCID non chargé');
-      console.error('Erreur lecture person.xml', err);
-    });
+    loadORCID();
   </script>
 </body>
 </html>
