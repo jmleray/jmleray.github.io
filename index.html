@@ -124,10 +124,14 @@
         // Keywords
         const kwRoot = firstLocal(person, 'keywords');
         if (kwRoot) {
-          const kws = byLocal(kwRoot, 'keyword').map(k => text(k)).filter(Boolean);
-          if (kws.length) {
-            document.getElementById('keywords').innerHTML = kws.map(k => `<span class="badge">${k}</span>`).join(' ');
-            show('keywordsBox');
+          const kws = byLocal(kwRoot, 'keyword')
+    .map(k => k.childNodes.length ? [...k.childNodes].map(n => n.nodeType === 3 ? n.nodeValue.trim() : '').join('') : '')
+    .map(t => t.trim())
+    .filter(t => t.length > 0);
+  if (kws.length) {
+    document.getElementById('keywords').innerHTML =
+      kws.map(k => `<span class="badge">${k}</span>`).join(' ');
+    show('keywordsBox');
           }
         }
 
